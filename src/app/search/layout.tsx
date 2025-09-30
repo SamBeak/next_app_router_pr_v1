@@ -8,7 +8,9 @@ export default function Layout(
         <div>
             <div>임시 서치바</div>
             {children}
-            <ClientComponent /> 
+            <ClientComponent>
+                {children}
+            </ClientComponent>
         </div>
     );
 }
