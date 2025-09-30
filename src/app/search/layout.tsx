@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import ClientComponent from "./client-component";
 
 export default function Layout(
     {children} : {children: ReactNode}
@@ -7,6 +8,7 @@ export default function Layout(
         <div>
             <div>임시 서치바</div>
             {children}
+            <ClientComponent /> 
         </div>
     );
 }
